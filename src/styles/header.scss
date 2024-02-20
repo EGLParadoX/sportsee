@@ -1,0 +1,23 @@
+header {
+    background-color: black;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.993); 
+    nav {
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            height: 65px;
+            margin-right: 200px;
+        }
+        ul {
+            width: 100%;
+            padding-right: 100px;
+            font-size: 24px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+    }
+}

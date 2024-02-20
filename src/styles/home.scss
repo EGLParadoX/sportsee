@@ -1,0 +1,63 @@
+.user-infos {
+    padding: 40px 80px;
+    width: 100%;
+    
+
+    &-title {
+        font-size: 20px;
+        span {
+            color: red;
+        }
+    }
+
+    &-subtitle {
+        padding-top: 20px;
+    }
+}
+
+
+.left-graphs{
+    width: 100%;
+    margin-right: 100px;
+    &-under {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+
+    }
+}
+
+.main-content
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.macronutrients-info{ 
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    font-size: 24px;
+    padding: 40px 60px;
+    margin-bottom: 50px;
+
+
+    .icon {
+        margin-right: 50px;
+        padding: 25px;
+        border-radius: 5px;
+    }
+
+    .value-name {
+        .value {
+            font-weight: 600;
+        }
+        .name {
+            color: #74798C;
+        }
+    }
+}
+
+

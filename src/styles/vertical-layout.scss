@@ -1,0 +1,33 @@
+.vertical-layout {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 150px;
+    text-align: center;
+
+    &-icon {
+        color: red;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+
+        i {
+            border-radius: 10px;
+            font-size: 30px;
+            background-color: white;
+            margin: 15px 35px;
+            padding: 25px 5px;
+        }
+    }
+
+    &-copyright{
+        padding-top: 200px;
+        padding-bottom: 150px;
+        p {
+            rotate: -90deg;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+    }
+}

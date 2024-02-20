@@ -1,0 +1,44 @@
+@media (max-width: 1686px) {
+
+    .user-infos {
+        padding: 40px 20px;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+    }
+
+    .left-graphs {
+        margin-right: 0px;
+
+        &-under {
+            .responsive {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .right-info {
+        .allMacroNutrients
+        {
+            display: flex;
+            justify-content: space-between;
+
+            .macronutrients-info
+            {
+                padding: 10px 20px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                font-size: 20px;
+
+                .icon {
+                    padding: 15px;
+                }
+            }
+
+
+        }
+
+    }
+  }

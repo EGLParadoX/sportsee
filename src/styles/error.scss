@@ -1,0 +1,19 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    h1 {
+        font-size: 40px;
+        color: red;
+        padding-bottom: 300px;
+    }
+    
+
+    img {
+        padding-bottom: 20px;
+        height: 150px;
+    }
+}

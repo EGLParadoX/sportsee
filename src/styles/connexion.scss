@@ -1,0 +1,82 @@
+.connexion-page {
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connexion-page-content {
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 1px solid red;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+
+    h1{
+        padding-bottom: 50px;
+        padding-top: 100px;
+    }
+}
+
+
+.connexion-page-content {
+    .labels {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label {
+        margin: 0 10px;
+        position: relative;
+        font-size: 20px;
+
+        input[type="radio"] {
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 1px solid rgba(255, 0, 0, 0.658);
+            border-radius: 50%;
+            outline: none;
+            margin-right: 5px;
+            position: relative;
+            top: 0px;
+            transition: all 0.3s;
+
+            &:hover{
+                border: 2px solid rgb(255, 0, 0);
+                cursor: pointer;
+            }
+
+            &:checked {
+                background-color: rgba(255, 0, 0, 0.671);
+            }
+        }
+
+        span {
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+
+
+
+.connexion-page-content button {
+    margin-top: 100px;
+    padding: 10px 60px;
+    font-size: 20px;
+    background-color: red; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: rgba(255, 0, 0, 0.555);
+    }
+}
