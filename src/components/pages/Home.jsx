@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import UserActivity from "../charts/UserActivity";
 import UserAverageSessions from "../charts/UserAveragesSessions";
 import UserPerformance from "../charts/UserPerformance";
@@ -11,6 +11,7 @@ import DataService from "../../utils/dataService";
 const Home = () => {
   const { userId } = useParams();
   const location = useLocation();
+  const navigate = useNavigate();
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -30,11 +31,13 @@ const Home = () => {
         setLoading(false);
       } catch (error) {
         setLoading(false);
+        navigate('/error', { state: { errorMessage: "Oups, une erreur est survenue lors de la récupération des données" } });
+ 
       }
     };
 
     fetchData();
-  }, [userId, dataSource, location.search]);
+  }, [userId, dataSource, location.search, navigate]);
 
   if (loading) {
     return <div>Loading...</div>;
